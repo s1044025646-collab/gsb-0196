@@ -1,0 +1,25 @@
+{
+  "name": "finite-field-poly-factor",
+  "version": "1.0.0",
+  "description": "素数域一元多项式分解与不可约证书后端",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/test/*.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "tsc -p tsconfig.json && node dist/scripts/demo.js"
+  },
+  "keywords": [
+    "finite-field",
+    "polynomial",
+    "factorization",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
